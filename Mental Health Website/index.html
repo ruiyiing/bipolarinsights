@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UFT-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="style.css" rel="stylesheet" type="text/css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700;800&display=swap" rel="stylesheet">
+        <script src="script.js"></script>
+        <script src="https://kit.fontawesome.com/df251e9d43.js" crossorigin="anonymous"></script>
+
+        <title>Bipolar Insights</title>
+</head>
+
+
+
+
+<body>
+    <!--This is Hero section-->
+    <div id="hero-section">
+        <div class="container-1">
+            <div class="nav-bar">
+                <div class="logo"><a href="index.html"><img src="images/logo-white.png" alt="Bipolar Insights Logo"></a></div>
+                
+
+                <div class="nav-links">
+                    <ul>
+                        <li>
+                            <h4><a href="about.html">About Us</a></h4>
+                            <div class="underline"></div>
+                        </li>
+                        <li>
+                            <h4><a href="overview.html">What is Bipolar Disorder?</a></h4>
+                            <div class="underline"></div>
+                        </li>
+                        <li>
+                            <h4><a href="service.html">Services & Support</a></h4>
+                            <div class="underline"></div>
+                        </li>
+                        <li>
+                            <h4><a href="contact.html">Contact Us</a></h4>
+                            <div class="underline"></div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="search-icon"><i class="fa-solid fa-magnifying-glass"></i></div>
+
+                <div class="toggle_btn">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+            </div>
+
+            <div class="dropdown_menu open">
+                <li>
+                    <h4><a href="about.html">About Us</a></h4>
+                </li>
+                <li>
+                    <h4><a href="overview.html">What is Bipolar Disorder?</a></h4>
+                </li>
+                <li>
+                    <h4><a href="service.html">Services & Support</a></h4>
+                </li>
+                <li>
+                    <h4><a href="contact.html">Contact Us</a></h4>
+                </li>
+            </div>
+
+            <script type="text/JavaScript">
+                const toggleBtn = document.querySelector('.toggle_btn')
+                const toggleBtnIcon = document.querySelector('.toggle_btn i')
+                const dropDownMenu = document.querySelector('.dropdwon_menu')
+            
+                toggleBtn.onclick = function () {
+                    dropDownMenu.classList.toggle('open')
+                    const isOpen = dropDownMenu.classList.contains('open')
+            
+                    toggleBtnIcon.classList = isOpen;
+                        ? 'fa-solid fa-xmark'
+                        : 'fa-solid fa-bars'
+                }
+            </script>
+           
+            <div class="headline-content">
+                <h1>Bipolar Disorder: Understanding the Highs and Lows</h1>
+                <p>Gain a better understanding of bipolar disorder and the fluctuating nature of moods, empowering individuals to navigate their journey with awareness and self-care.</p>
+                <div class="cta"><h4><a href="overview.html">Learn More</a></h4></div>
+            </div>
+        </div>
+    </div>
+
+    <!--This is Bipolar section-->
+    <div id="bipolar-section">
+        <div class="bg-colour">
+            <div class="container-2">
+                <div class="main-content">
+                    <h2>What is Bipolar Disorder?</h2>
+                    <p>Bipolar disorder is a complex mental health condition that brings intense mood swings, from soaring highs to debilitating lows. Learn more about this condition, its causes, symptoms, treatment and coping strategies, and find hope in the journey of those affected by clicking below. Let's explore and educate ourselves about bipolar disorder together.</p>
+                    <div class="cta"><h4><a href="overview.html">Learn More</a></h4></div>
+                </div>
+                <img class="bipolar-image" src="images/illus-bipolar-disorder.png" alt="Bipolar Disorder">
+            </div>
+        </div>
+    </div>
+
+    <!--This is Service section-->
+    <div id="service-section">
+        <div class="container-3">
+            <div class="main-heading" style="text-align: center;"><h2>What do we provide?</h2></div>
+            <div class="columns-1">
+                <div id="card-1">
+                    <div class="card-content">
+                        <div class="text">
+                            <h3>Immediate Support</h3>
+                            <p>Call our helpline at <a href="tel:03-4455 7799" style="color: #ff8e8a;">03-4455 7799</a> &lpar;Monday to Friday, 9 am to 9 pm&rpar; for prompt assistance and compassionate guidance.</p>
+                        </div>
+                        <div class="cta"><h4><a href="tel:03-4455 7799">Call Now</a></h4></div>
+                    </div>
+                </div>
+                <div id="card-2">
+                    <div class="card-content">
+                        <div class="text">
+                            <h3>Consultation Services</h3>
+                            <p>Get personalised guidance and support tailored to your needs, enhancing your understanding of bipolar disorder.</p>
+                        </div>
+                        <div class="cta"><h4><a href="service.html#cs-section">Book Now</a></h4></div>
+                    </div>
+                </div>
+                <div id="card-3">
+                    <div class="card-content">
+                        <div class="text">
+                            <h3>Inspiring Stories</h3>
+                            <p>Discover empowering narratives from individuals who have overcome bipolar disorder, finding hope and motivation.</p>
+                        </div>
+                        <div class="cta"><h4><a href="service.html#ins-section">Explore Now</a></h4></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--This is Statistics section-->
+    <div id="statistics-section">
+        <div class="container-3">
+            <div class="main-heading" style="text-align: center;"><h2>Did You Know?</h2></div>
+            <div class="columns">
+                <div class="column">
+                    <img class="icon" src="images/icon-people.png" alt="People icon">
+                    <div class="value"><p>40M</p></div>
+                    <div class="description"><p>The number of people who experience bipolar disorder</p></div>
+                </div>
+                <div class="column">
+                    <img class="icon" src="images/icon-age.png" alt="Age icon">
+                    <div class="value"><p>25</p></div>
+                    <div class="description"><p>The average age of onset for bipolar disorder</p></div>
+                </div>
+                <div class="column">
+                    <img class="icon" src="images/icon-suicide.png" alt="Suicide icon">
+                    <div class="value"><p>20%</p></div>
+                    <div class="description"><p>The suicide rate among individuals (mostly untreated) with bipolar disorder</p></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--This is footer-->
+    <div class="footer">
+        <div class="container-4">
+            <div class="logo-connect">
+                <div class="logo"><a href="index.html"><img src="images/logo-white.png"></a></div>
+                <div class="connect">
+                    <div class="sns-icon fb"><a href="#"><img src="images/icon-fb-white.png" alt="Facebook icon"></a></div>
+                    <div class="sns-icon tw"><a href="#"><img src="images/icon-tw-white.png" alt="Tweeter icon"></a></div>
+                    <div class="sns-icon ig"><a href="#"><img src="images/icon-ig-white.png" alt="Instagram icon"></a></div>
+                </div>
+            </div>
+            <div class="quick-links">
+                <h5>Quick Links</h5>
+                <div class="links">
+                    <p><a href="overview.html">What is Bipolar Disorder?</a></p>
+                    <p><a href="service.html">Services & Support</a></p>
+                    <p><a href="about.html">About Us</a></p>
+                    <p><a href="contact.html">Contact Us</a></p>
+                </div>
+            </div>
+            <div class="contact">
+                <h5>Contact Information</h5>
+                <div class="info-text">
+                    <p>Helpline & Support:</p>
+                    <div class="contact-info">
+                        <div class="number">
+                            <img class="contact-icon" src="images/icon-phone-white.png" alt="Phone icon">
+                            <p><a href="tel:03-4455 7799">03-4455 7799</a> (Everyday 9 am - 9 pm)</p>
+                        </div>
+                        <div class="email">
+                            <img class="contact-icon" src="images/icon-email-white.png" alt="E-mail icon">
+                            <p><a href="mailto:support@bipolarinsights.com.my">support@bipolarinsights.com.my</a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="info-text">
+                    <p>Administrative inquiries:</p>
+                    <div class="contact-info">
+                        <div class="number">
+                            <img class="contact-icon" src="images/icon-phone-white.png" alt="Phone icon">
+                            <p><a href="tel:03-7878 3230">03-7878 3230</a> (Monday to Friday, 9 am - 5 pm)</p>
+                        </div>
+                        <div class="email">
+                            <img class="contact-icon" src="images/icon-email-white.png" alt="E-mail icon">
+                            <p><a href="mailto:info@bipolarinsights.com.my">info@bipolarinsights.com.my</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="location">
+                <h5>Location</h5>
+                <p>24, Jalan Anggerik Vanilla M 31/M, 
+                    <br>Kota Kemuning, 40460 Shah Alam, Selangor.</p>
+            </div>
+        </div>
+        <div class="policy">
+            <p><a href="#">Privacy Policy</a> | <a href="#">Terms & Conditions</a> | Copyright © 2023 Bipolar Insights</p>
+        </div>
+    </div>
+
+
+
+</body>
+
+
